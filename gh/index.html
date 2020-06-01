@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<head>
+  <title>GigaHash Hashing Solutions</title>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="eth-icon.png" type="image/x-icon">
+  <!-- W3.CSS Theme -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <script src="https://kit.fontawesome.com/ae0b909952.js" crossorigin="anonymous"></script>
+  <style>
+    body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+    .w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+    .w3-third img:hover{opacity: 1}
+
+    #modal01 {
+      background-color: rgba(0, 0, 0, 0.9);
+    }
+  </style>
+</head>
+<body class="w3-content" style="max-width: 1600px">
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-bar-block y w3-collapse w3-top w3-center" style="z-index: 3; width: 300px; font-weight: bold;" id="mySidebar"><br>
+  <button onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</button>
+  <img src="ghLogo.png" alt="GigaHash Hashing Solutions" class="w3-center" style="width: 100%;">
+  <div class="w3-center w3-padding-24">
+    	<img src="eth-purple.png" class="w3-margin" height="50px">
+    <p class="w3-center w3-text-grey">2020 GigaHash. All Rights Reserved.</p>
+    </div>
+  </nav>
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-padding-16 w3-white">
+    <img src="ghLeaves.png" class="w3-left w3-center  w3-margin" style="width: 25px; height: 25px;">
+    <span class="w3-left w3-margin w3-xlarge"></span>
+    <button onclick="w3_open()" class="w3-right w3-margin w3-button w3-white ">☰</button>
+  </header>
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div onclick="w3_close()" class="w3-overlay w3-hide-large w3-animate-opacity" style="cursor: pointer;" id="myOverlay"></div>
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left: 300px;">
+    <!-- Push down content on small screens -->
+    <div class="w3-hide-large" style="margin-top: 80px"></div>
+    <!-- Photo grid
+    <div class="w3-row">
+      <div class="w3-third">
+        <img src="https://www.newarteditions.com/wp-content/uploads/2019/01/KAWS_Kawsbob_1st_Sample_Proof.jpg"  onclick="onClick(this)" style="width: 100%" alt="Demo">
+      </div>
+      <div class="w3-third">
+        <img src="https://www.hampel-auctions.com/img/auktionen/A108/b/Hampel-108031004.jpg"  onclick="onClick(this)" style="width: 100%" alt="Sample">
+      </div>
+      <div class="w3-third">
+        <img src="https://guyhepner.com/wp-content/uploads/2018/04/blame-games-10-by-kaws.png"  onclick="onClick(this)" style="width: 100%" alt="Test">
+      </div>
+    </div>
+     Modal for full size images on click
+    <div id="modal01" onclick="this.style.display='none' " class="w3-modal" style="padding-top: 0">
+      <span class="w3-button w3-xlarge w3-display-topright w3-transparent w3-hover-none">×</span>
+      <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="img01" class="w3-image" style="width: 40%;">
+        <b><p id="caption" class="w3-text-white"></p></b>
+      </div>
+    </div>
+
+    About section -->
+    <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32">
+      <h4 class="w3-xxlarge"><b>About</b></h4>
+      <img src="eth-img.png" alt="Me" class="w3-image w3-padding-32" width="600" height="650">
+      <div class="w3-content w3-justify" style="max-width:600px">
+        <h4 class="w3-xxlarge w3-center">GigaHash Hashing Solutions</h4>
+        <p>
+          GigaHash Hashing Solutions is a revolutionary new platform being strictly created on
+          the Ethereum blockchain to mine cryptocurrency, primarily Ethereum. In the future,
+          we plan to mine more than just Ethereum, such as Bitcoin and Litecoin to name a few.
+          <br><br>
+          We have created an ICO to help finance this project since this will not only be an
+          expensive but very labor-extensive and resource-dependent project, we are seeking
+          out help from the community to perform some simple tasks to help advertise our
+          brand and get our name out there and in return at the end of every month, we will
+          be issuing a one-time payment for everyone who participated in our program during
+          that current month.
+          <br><br>
+          If you are reading this then we have already sparked your interest, so please from
+          here now visit our white paper and you decide if you want to continue with our
+          platform and if this is not for you then we are sorry, please let us know what we can
+          do to make this more attractive to you. No matter the message, negative or positive
+          we will always get back to you as soon as one of our members can, because your
+          opinion means everything to us and we don’t want to waste either of yours or our
+          time so please don’t be shy.
+        </p>
+        <hr class="w3-opacity">
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-center w3-padding-32 w3-grey">  
+      <div class="w3-row-padding">
+        <div class="w3-third">
+          <h3>Social</h3>
+          <div class="w3-container w3-center w3-padding-64 w3-opacity w3-xxlarge">
+            <a href="https://github.com/GigaHashNetwork" target="_blank"><i class="fab fa-github-alt w3-hover-opacity"></i></a>
+            <a href="https://www.instagram.com/gigahashnetwork/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="https://twitter.com/gigahashnetwork/"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+            <a href="https://discord.gg/ZCXJEJ5"><i class="fab fa-discord w3-hover-opacity"></i></a>
+            <!--<a href="#"><i class="fab fa-facebook-f"></i></a>-->
+            <!--<a href="https://www.linkedin.com/in/gigahash-hashing-solutions-0943451ab/"><i class="fab fa-linkedin-in"></i></a>-->
+            <!--<a href="#"><i class="fab fa-slack"></i></a>-->
+            <a href="https://www.snapchat.com/add/gigahashnetwork"><i class="fab fa-snapchat-ghost"></i></a>
+            <!--<a href="#"><i class="fab fa-telegram-plane"></i></a>-->
+            <a href="https://www.youtube.com/channel/UCAzyetkV9FVaZTs49NgErzQ/"><i class="fab fa-youtube"></i></a>
+            <hr>
+            <i class="fas fa-envelope w3-hover-opacity"></i>
+            <h4>support@gigahash.net</h4>
+          </div>
+        </div>
+        <div class="w3-third">
+          <h3>Links</h3>
+          <ul class="w3-ul w3-hoverable">
+            <li class="w3-padding-16 w3-hover-black w3-margin">
+              <a href="https://forms.gle/ABR7FGkFRD6R1a44A" target="_blank"><img src="http://icons.iconarchive.com/icons/elegantthemes/beautiful-flat/64/mail-icon.png" class="w3-left w3-margin-right"></a>
+              <span class="w3-large">Airdrop Form</span><br>
+              <span>Request Airdrop</span>
+            </li>
+            <li class="w3-padding-16 w3-hover-black w3-margin">
+              <a href="gigahash-whitepaper.pdf" download="gigahash-whitepaper.pdf"><img src="http://icons.iconarchive.com/icons/elegantthemes/beautiful-flat/64/clipboard-icon.png" class="w3-left w3-margin-right"></a>
+              <span class="w3-large">Whitepaper</span><br>
+              <span>Download PDF</span>
+            </li>
+          </ul>
+        </div>
+        <div class="w3-third">
+          <h3>ICO ADDRESS</h3>
+          	<img src="icoAddres.png">
+        </div>
+      </div>
+    </footer>
+
+    <div class="w3-light-grey w3-center w3-padding-24">
+    	<img src="eth-footer.png" height="50px">
+    </div>
+  <!-- End page content -->
+  </div>
+<!-- NOTE: JAVASCRIPT -->
+  <script>
+  // Script to open and close sidebar
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+  }
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+  }
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
+  </script>
+</body>
+</html>
